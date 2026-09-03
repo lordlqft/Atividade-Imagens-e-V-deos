@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,6 +124,11 @@
 
         /* MARCA — Configurar TODAS as imagens do tema (largura, altura, borda, etc.) */
         .img-amostra {
+            width: 100%;
+            max-width: 600px;
+            height: 250px;
+            object-fit: scale-down;
+
             /* <-- configure aqui (ex.: width, height, border, border-radius) */
         }
 
@@ -133,6 +139,13 @@
 
         /* MARCA — Configurar TODOS os vídeos do tema (largura, altura, borda, etc.) */
         .video-amostra {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            object-fit: cover;
+            border: 3px solid var(--cor-primaria);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             /* <-- configure aqui (ex.: width, height, border, border-radius) */
         }
 
@@ -179,6 +192,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Impressão 3D em Metal</h1>
@@ -217,6 +231,8 @@
             <!-- MARCA IMAGEM 1: insira aqui uma imagem que represente o tema -->
             <div class="imagem-exemplo">
                 <!-- Inserir aqui a imagem -->
+                <img class="img-amostra" src="imagens/maquina-impressao-metal.webp"
+                    alt="Máquina de impressão 3D em metal com pó metálico.">
                 <p class="legenda">Máquina de impressão 3D em metal com pó metálico.</p>
             </div>
         </section>
@@ -230,13 +246,16 @@
             <ul>
                 <li><strong>SLM (Selective Laser Melting):</strong> fusão seletiva a laser, uma das mais usadas.</li>
                 <li><strong>EBM (Electron Beam Melting):</strong> usa feixe de elétrons, boa para titânio.</li>
-                <li><strong>DED (Directed Energy Deposition):</strong> deposição direta de energia, ideal para reparos.</li>
+                <li><strong>DED (Directed Energy Deposition):</strong> deposição direta de energia, ideal para reparos.
+                </li>
                 <li><strong>Binder Jetting:</strong> aglutinante sobre pó seguido de sinterização.</li>
             </ul>
 
             <!-- MARCA IMAGEM 2: insira aqui uma segunda imagem sobre o tema -->
             <div class="imagem-exemplo">
                 <!-- Inserir aqui a imagem -->
+                <img class="img-amostra" src="imagens/pecas-complexas-impressas-metal.png"
+                    alt="Peça metálica complexa pronta após a impressão.">
                 <p class="legenda">Peça metálica complexa pronta após a impressão.</p>
             </div>
         </section>
@@ -251,34 +270,46 @@
             <!-- MARCA GALERIA: insira aqui as demais imagens sobre o tema (mínimo 8) -->
             <div class="galeria">
                 <figure class="imagem-exemplo">
-                    <!-- Inserir aqui a imagem -->
+                    <img class="img-amostra" src="imagens/po-metalico-fino.webp"
+                        alt="Pó metálico fino espalhado na câmara.">
                     <figcaption class="legenda">Pó metálico fino espalhado na câmara.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/laser-fundindo.webp" alt="Laser fundido seletivamente o pó.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Laser fundindo seletivamente o pó.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/impressora-camada.webp" alt="Construção camada por camada.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Construção camada por camada.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/implante-titanio.webp"
+                        alt="Implante de titânio para medicina.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Implante de titânio para medicina.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/peca-aeroespacial.webp"
+                        alt="Peça aeroespacial leve e resistente.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Peça aeroespacial leve e resistente.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/pos-processamento.webp" alt="Pos-processamento e acabamento.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Pós-processamento e acabamento.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/engrenagem-metalica.webp"
+                        alt="Engrenagem metálica personalizada.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Engrenagem metálica personalizada.</figcaption>
                 </figure>
                 <figure class="imagem-exemplo">
+                    <img class="img-amostra" src="imagens/ligas-metalicas-especiais.webp"
+                        alt="Ligas metálicas especiais disponíveis.">
                     <!-- Inserir aqui a imagem -->
                     <figcaption class="legenda">Ligas metálicas especiais disponíveis.</figcaption>
                 </figure>
@@ -294,6 +325,7 @@
             </div>
             <div class="imagem-exemplo">
                 <!-- Inserir aqui a imagem -->
+                <img src="" alt="">
                 <map name="mapa-fluxo">
                     <area shape="rect" coords="0,0,300,200" href="#tecnologias" alt="Tecnologias">
                     <area shape="rect" coords="300,0,600,200" href="#aplicacoes" alt="Aplicações">
@@ -320,8 +352,7 @@
             <!-- MARCA VÍDEO 1: insira aqui um vídeo sobre o tema -->
             <div class="video-exemplo">
                 <video class="video-amostra" controls poster="imagens/impressora-metal.jpg">
-                    <source src="" type="video/mp4">
-                    <source src="" type="video/webm">
+                    <source src="imagens/demonstracao-impressao.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
                 <p class="legenda">Demonstração do processo de impressão 3D em metal.</p>
@@ -351,8 +382,7 @@
             <!-- MARCA VÍDEO 2: insira aqui um segundo vídeo sobre o tema -->
             <div class="video-exemplo">
                 <video class="video-amostra" controls poster="imagens/peca-metal.jpg">
-                    <source src="" type="video/mp4">
-                    <source src="" type="video/webm">
+                    <source src="imagens/etapas-pos-processamento.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
                 <p class="legenda">Etapas do pós-processamento de peças metálicas.</p>
@@ -373,4 +403,5 @@
         <p>Página de estudo — Impressão 3D em Metal. Alunos devem estilizar as imagens e os vídeos.</p>
     </footer>
 </body>
+
 </html>
